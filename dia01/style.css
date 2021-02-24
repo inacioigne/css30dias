@@ -1,0 +1,43 @@
+.divPrincipal {
+    display: flex;
+    margin-top: 10%;
+    justify-content: center
+    
+}
+.div1 {
+    display: flex;
+    width: 60px;
+    height: 60px;
+    margin: 0 30px;
+    transform: rotate(-30deg) skew(25deg);    
+}
+img {
+    z-index: 1;
+}
+
+span {
+    background-color: brown;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.div1:hover img {
+    transform: translate(40px, -40px);
+    opacity: 1;
+}
+.div1:hover span:nth-child(4) {
+    transform: translate(30px, -30px);
+    opacity: 0.8;
+}
+.div1:hover span:nth-child(3) {
+    transform: translate(20px, -20px);
+    opacity: 0.6;
+}
+.div1:hover span:nth-child(2) {
+    transform: translate(10px, -10px);
+    opacity: 0.4;
+}
+.div1:hover span:nth-child(1) {
+    transform: translate(0, 0 );
+    opacity: 0.2;
+}
