@@ -1,0 +1,33 @@
+.container {
+   width: 100vw;
+   height: 100vh;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+    
+}
+.text {
+    width: 200px;
+    position: absolute;
+    text-align: center;
+    font-size: 2em;    
+}
+
+.ring {
+    border: solid 1px blue;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    box-shadow: 0 5px 0 #262626;
+    background: transparent;
+    animation: animate 1s linear infinite;
+}
+@keyframes animate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
