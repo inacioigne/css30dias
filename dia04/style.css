@@ -1,0 +1,51 @@
+body 
+{
+    background: #353b48;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.desafio 
+{
+    width: 200px;
+    height: 60px;
+    background: none;
+    border: 4px solid;
+    color: pink;
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-size: 16px;
+    position: relative;
+}
+
+.desafio::before, .desafio::after
+{
+    content: "";
+    position: absolute;
+    width: 14px;
+    height: 4px;
+    background: #353b48;
+    transform: skewX(50deg);
+    transition: .4s linear;
+}
+.desafio::before
+{
+    top: -4px;
+    left: 10%;
+}
+.desafio::after
+{
+    bottom: -4px;
+    right: 10%;
+}
+.desafio:hover::before
+{
+    left: 80%;
+}
+.desafio:hover::after
+{
+    right: 80%;
+}
